@@ -1,0 +1,168 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	overflow-x: hidden
+	opacity: 1
+	font-family: SourceSansPro
+	font-style: normal
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+.blue
+	background-color: #4990e2
+.green
+	background-color: #1fcc6d
+.yellow
+	background-color: #f1c40f
+.gray
+	background-color: #34495e
+.cloudy
+	background-color: #ecf0f1
+.content
+	margin-top: 332px
+	display: flex
+	justify-content: center
+	max-width: 1440px
+	margin-left: auto
+	margin-right: auto
+	flex-wrap: wrap
+.title
+	font-size: 16px
+	line-height: 1.25
+	text-align: left
+	color: #4a4a4a
+	display: block
+	margin-bottom: 8px
+.content-left
+	box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1)
+	min-width: 365px
+	padding: 24px 28px
+	&__settings
+		font-size: 14px
+		line-height: 1.29
+		text-align: left
+		color: #9b9b9b
+		text-transform: uppercase
+.typeface
+	margin-top: 20px
+	&__item
+		width: 60px
+		height: 60px
+		background-color: #ededed
+		font-size: 24px
+		font-weight: 600
+		line-height: 1.25
+		text-align: center
+		color: #000000
+		border: none
+		cursor: pointer
+		&:focus
+			outline: none
+.button-active
+	border: solid 2px #000000
+.styling
+	margin-top: 20px
+	&__item
+		font-size: 20px
+		line-height: 1.2
+		margin-right: 17px
+		text-align: left
+		color: #a6a6a6
+		cursor: pointer
+		display: inline-block
+.styling-active
+	color: black
+.background
+	margin-top: 20px
+	ul
+		list-style: none
+		display: flex
+		justify-content: flex-start
+		padding: 0
+	&__item
+		width: 32px
+		height: 32px
+		margin-right: 12px
+		border: solid 1px rgba(0, 0, 0, 0.09)
+		-moz-border-radius: 50px
+		-webkit-border-radius: 50px
+		border-radius: 50px
+		cursor: pointer
+.content-right
+	background-color: #4990e2
+	min-width: 555px
+	padding: 24px
+	text-align: center
+	display: flex
+	flex-direction: column
+	span
+		display: block
+	&__preview
+		opacity: 0.4
+		text-transform: uppercase
+		display: block
+		font-size: 14px
+		line-height: 1.29
+		text-align: left
+		color: #000000
+	&__content
+		font-size: 48px
+		display: block
+		line-height: 1.25
+		color: #ffffff
+		align-self: center
+		margin: auto
+	&__bottom
+		align-self: flex-end
+		margin-right: auto
+		margin-left: auto
+		.font_family, .font_styling
+			display: inline-block
+.checkmark
+	display: inline-block
+	&:after
+		content: ''
+		display: block
+		margin: 25% auto 50% auto
+		width: 5px
+		height: 10px
+		border: solid #e2e2e2
+		border-width: 0 2px 2px 0
+		transform: rotate(45deg)
+
+@import "media"
